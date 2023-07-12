@@ -83,7 +83,6 @@ void link_insert_num(STU **p_head,STU *p_new)
         pf=pb;
         pb=pb->next;
     }
-
     if(p_new->num < pb->num)//找到一个节点的num比新来的节点num大，插在pb的前面
     {
         if(pb== *p_head)//找到的节点是头节点，插在最前面

@@ -15,6 +15,7 @@ typedef struct student
   struct student *next;
 } STU, *STUList;
 
-void link_creat_head(STU **p_head, STU *p_new);
+void link_creat_head(STU *p_head, STU *p_new);
+void link_print(STU *p_head);
 
 #endif

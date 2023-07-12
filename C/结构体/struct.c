@@ -6,6 +6,7 @@ struct stu
   char name[200];
 } STU;
 
+
 void main()
 {
   char *buf_point = "hello world";
