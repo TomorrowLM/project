@@ -9,22 +9,6 @@ typedef struct
   // 定义结构体变量之定义结构体类型的同时定义结构体变量
 } stu;
 
-// void fn(stu *a)
-// {
-//   stu *b = (stu *)malloc(sizeof(stu));
-//   strcpy(b->name, "b1");
-//   a = b;
-//   printf("%d,%s\n", sizeof(a), &a->name);
-// }
-
-// int main(int argc, char *argv[])
-// {
-//   // 结构体变量的初始化
-//   stu *zhaoliu = (stu *)malloc(sizeof(stu)); // zhaoliu的地址为空，指针为空时必须使用二级指针传参
-//   fn(zhaoliu);
-//   printf("%d,%s", sizeof(zhaoliu), &zhaoliu->name);
-//   return 0;
-// }
 
 void fn(stu **a)
 {
