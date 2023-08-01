@@ -33,4 +33,5 @@ void main()
   {
     printf("%d \n", L->data[i]);
   }
+  printf("%d", L->length);
 }

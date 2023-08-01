@@ -9,7 +9,6 @@ typedef struct
   // 定义结构体变量之定义结构体类型的同时定义结构体变量
 } stu;
 
-
 void fn(stu **a)
 {
 
@@ -19,16 +18,18 @@ void fn(stu **a)
   // strcpy(a->name, "b1");
   printf("%p\n", **a); // 堆地址
   printf("%p\n", *a);  // 指针的地址
-  printf("%p\n", a); // 指针的地址的地址
-  printf("%p\n", &a); // 指针的地址的地址
-  *a = b;//指向一级指针的地址为b指针的地址
+  printf("%p\n", a);   // 指针的地址的地址
+  printf("%p\n", &a);  // 指针的地址的地址
+  printf("=======\n");
+  *a = b;              // 指向一级指针的地址为b指针的地址
   printf("%p\n", **a); // 堆地址
   printf("%p\n", *a);  // 指针的地址
-  printf("%p\n", a); // 指针的地址的地址
-  printf("%p\n", *b);     // 指针的地址的地址
-  printf("%p\n", b);      // 指针的地址的地址
-  printf("%p\n", &b);     // 指针的地址的地址
-  // printf("%d,%s\n", sizeof(a), &a->name);
+  printf("%p\n", a);   // 指针的地址的地址
+  printf("=======\n");
+  printf("%p\n", *b);
+  printf("%p\n", b);
+  printf("%p\n", &b);
+  printf("=======\n");
 }
 
 int main(int argc, char *argv[])
@@ -40,6 +41,8 @@ int main(int argc, char *argv[])
   printf("%p\n", *zhaoliu); // 堆地址
   printf("%p\n", zhaoliu);  // 指针的地址
   printf("%p\n", &zhaoliu); // 指针的地址的地址
+  printf("%p\n", &zhaoliu); // 指针的地址的地址
+  printf("=======\n");
   fn(&zhaoliu);
   printf("%p\n", &zhaoliu);
   printf("%d,%s", sizeof(zhaoliu), &zhaoliu->name);

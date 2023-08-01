@@ -1,9 +1,10 @@
 cc = gcc
 # gcc .\index.c .\lib\link-create.c -o index
 # $(cc) index.c .\lib\link-create.c .\lib\link_print.c -o index
-main: home.c
-	gcc .\home.c -o home
-	./home.exe
+main:	index.c
+			gcc index.c -o index.exe
+			./index.exe
 
-clean:
-	rm ‐rf */*.exe ./*.exe
+basic: basic.c
+			gcc basic.c -o index.exe
+			./index.exe

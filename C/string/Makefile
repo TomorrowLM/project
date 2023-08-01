@@ -8,3 +8,6 @@ main:	index.c
 test:	test.c
 			gcc test.c -o test.exe
 			./test.exe
+
+app:	./app/kmp.c
+			gcc ./app/kmp.c -o kmp.exe

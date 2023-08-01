@@ -13,19 +13,21 @@ void fn(stu *a)
 {
 
   stu *b = (stu *)malloc(sizeof(stu));
-  strcpy(b->name, "b1");
-  // strcpy(a->name, "b1");
+  // strcpy(b->name, "b1");
+  // strcpy(a->name, "b2");
   printf("%p\n", *a); // 堆地址
   printf("%p\n", a);  // 指针的地址
   printf("%p\n", &a); // 指针的地址的地址
+  printf("=======\n");
   a = b;
-  printf("**\n%p\n", *a); // 指针的地址的地址
-  printf("**\n%p\n", a);  // 指针的地址的地址
-  printf("**\n%p\n", &a); // 指针的地址的地址
-  printf("%p\n", *b);     // 指针的地址的地址
-  printf("%p\n", b);      // 指针的地址的地址
-  printf("%p\n", &b);     // 指针的地址的地址
-  // printf("%d,%s\n", sizeof(a), &a->name);
+  printf("%p\n", *a);
+  printf("%p\n", a);
+  printf("%p\n", &a);
+  printf("=======\n");
+  printf("%p\n", *b);
+  printf("%p\n", b);
+  printf("%p\n", &b);
+  printf("=======\n");
 }
 
 int main(int argc, char *argv[])
@@ -37,6 +39,7 @@ int main(int argc, char *argv[])
   printf("%p\n", *zhaoliu); // 堆地址
   printf("%p\n", zhaoliu);  // 指针的地址
   printf("%p\n", &zhaoliu); // 指针的地址的地址
+  printf("=======\n");
   fn(zhaoliu);
   printf("%p\n", &zhaoliu);
   printf("%d,%s", sizeof(zhaoliu), &zhaoliu->name);

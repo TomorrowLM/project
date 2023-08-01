@@ -15,7 +15,7 @@ int main()
         scanf("%d %d %s", &p_new->num, &p_new->score, &p_new->name);
         printf("%p\n", head);
         printf("%p\n", &head);
-        link_creat_head(head, p_new); // 将新节点加入链表,&head二级指针
+        link_creat_head(&head, p_new); // 将新节点加入链表,&head二级指针
         printf("%p\n", head);
         printf("%p\n", *head);
         printf("id=%d\n", head->num);
