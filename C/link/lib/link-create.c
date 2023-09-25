@@ -7,7 +7,7 @@ void link_creat_head(STU **p_head, STU *p_new)
   STU *p_mov = *p_head; // p_mov保存当前链表中指向的对象
   if (p_head == NULL)   // 当第一次加入链表为空时，head执行p_new
   {
-    p_head = p_new;//将第一个节点赋值给head
+    p_head = p_new; // 将第一个节点赋值给head
     // printf("%p\n", p_head);
     // printf("%p\n", &p_head);
     p_new->next = NULL;
